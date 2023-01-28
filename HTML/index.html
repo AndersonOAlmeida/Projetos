@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!--tipo de dociumento-->
+<html lang="pt-BR"> <!--linguagem do site-->
+
+<head> <!--cabeca do site, detalhes que nao aparecem-->
+    <meta charset="UTF-8"> <!--comando para o site ler os acentos da lingua ptbr-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <title>Super Mario Bros - O Filme</title> <!--titulo do site-->
+</head>
+
+<body>
+    <div class="fundo-video"> <!--insere uma divisoria no site-->
+        <video class="video" autoplay loop muted>
+            <source src="./src/video/video-mario.mp4" type="video/mp4"> <!--busca o local do video-->
+        </video>
+    </div>
+
+    <header class="cabecalho"> <!--cabecalho do site-->
+        <a>
+            <img class="logo" src="./src/imagens/logo-chapeu-mario.png" alt="logo chapeu Mario"> <!--insere uma imagem no site, src é pra mandar o local onde esta a imagem e o alt é o nome da imagem no site-->
+        </a>
+        <nav><!--seção de navegaveis-->
+            <ul class="menu"> <!--lista sem ordem especifica-->
+                <li><a href="#">Home</a></li> <!--elemento da lista-->
+                <li><a href="#">Detalhes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="informacoes">
+            <img class="imagem-titulo" src="./src/imagens/titulo.png" alt="imagem do titulo do filme">
+            <p class="descricao">Mario é um encanador junto com oo seu irmão Luigi. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach, mas ameaçado pelo rei dos Koopas, que faz de tudo para conseguir reinar em todos os lugares.</p> <!--paragrafo de texto-->
+            <button class="botao-trailer">Veja o trailer!</button> <!--cria um botao-->
+        </div>
+        <img class="mario" src="./src/imagens/super-mario-chars.png" alt="mario e seus amigos" />
+
+        <div class="modal">
+            <div class="conteudo-modal">
+                <span class="fechar-modal">X</span>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/watch?v=wkn-Gb-Fhac&t=4s" title="Trailer oficial" frameborder="1" allow="accelerometer, autoplay, clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
